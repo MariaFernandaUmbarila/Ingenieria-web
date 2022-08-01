@@ -1,12 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> 
+<html> 
+<head> 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Aquí el título de la página</h1>
-</body>
-</html>
+    <title>Elementos semánticos del HTML5</title> 
+</head> 
+<body> 
+    <header> 
+        <h1>El Encabezado</h1> 
+    </header> 
+    <nav> 
+        <p>Los enlaces de navegación</p> 
+    </nav> 
+    <section> 
+        <p>Sección A</p>
+
+        <form action="#">
+            Usuario:
+            <input type="text" id="usuario">
+            <br>
+            Clave:
+            <input type="password" id="clave">
+            <br>
+            Edad:
+            <input type="text" id="edad" autofocus>
+            <br>
+            <input type="submit" value="Confirmar">
+        </form>
+    </section> 
+    <section> 
+        <p>Sección B</p>
+        
+        <form action="#">
+            Patente:
+            <input type="text" id="patente" placeholder="NCM23456-6">
+            <br>
+            <input type="submit" value="Aceptar">
+        </form>
+    </section>
+    <aside>
+        <p>Aqui la Publicidad</p>
+
+        <form action="#">
+            Usuario:
+            <input type="text" id="usuario" required>
+            <br>
+            Clave:
+            <input type="password" id="clave" required>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </aside>
+    <footer> 
+        <p>Aqui el Pié de página</p> 
+    </footer> 
+</body> 
+</html> 
