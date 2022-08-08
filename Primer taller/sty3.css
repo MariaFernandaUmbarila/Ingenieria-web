@@ -1,0 +1,19 @@
+#Texto1{
+    width: 80%;
+    float: left;
+    font-family: Verdana;
+    font-size: 150%;
+    text-align: justify;
+}
+
+#p_texto1{
+    text-align: center;
+}
+
+#texto2{
+    width: 80%;
+    float: left;
+    font-family: Verdana;
+    font-size: 150%;
+    text-align: justify;
+}
