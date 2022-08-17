@@ -16,4 +16,25 @@
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.55;
+    align-self: center;
+}
+#recuadro1{
+    border-radius: 20px;
+    background-color: #DDD;
+    width: 200px;
+    padding: 10px;
+}
+#recuadro1:hover{
+    width: 300px;
+}
+#recuadro2{
+    border-radius: 20px;
+    background-color: yellow;
+    width: 200px;
+    padding: 10px;
+    transition:weight 1s;
+    -webkit-transition:width 1s;
+}
+#recuadro2:hover{
+    width: 300px;
 }
