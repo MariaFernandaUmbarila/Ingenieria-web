@@ -1,0 +1,23 @@
+.fila_head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: red;
+    background-color: yellow;
+    text-transform: uppercase;
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+    border-spacing: 0px;
+}
+.fila{
+    background-color: yellow;
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+}
+.texto{
+    background-color: yellow;
+    border-style: dotted;
+    border-bottom-color: red;
+    border-width: 2px;
+}

@@ -1,19 +1,32 @@
 #Texto1{
     width: 80%;
     float: left;
-    font-family: Verdana;
-    font-size: 150%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 130%;
     text-align: justify;
 }
 
 #p_texto1{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #texto2{
     width: 80%;
-    float: left;
-    font-family: Verdana;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 150%;
     text-align: justify;
+}
+#p_texto2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#separacion{
+    border-spacing: 50px;
+}
+.imagenes{
+    margin: 10px;
+    height: auto;
+    width: 12%;
 }
