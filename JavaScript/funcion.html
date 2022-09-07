@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mensaje(){
+            document.write("Ingrese bien<br>");
+            document.write("su archivo<br>");
+        }
+        mensaje();
+
+        function mostrar(inicio, fin){
+            for(let f=inicio; f<=fin; f++){
+                document.write(f + " ");
+            }
+        }
+
+        let v1=parseInt(prompt("Ingrese inicio: "));
+        let v2=parseInt(prompt("Ingrese fin: "));
+
+        mostrar(v1, v2);
+    </script>
+</body>
+</html>
