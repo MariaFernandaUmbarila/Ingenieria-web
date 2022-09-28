@@ -1,3 +1,4 @@
+//Objeto con las variables que se usarán
 const calculator = {
   displayValue: '0',
   firstOperand: null,
@@ -5,6 +6,7 @@ const calculator = {
   operator: null,
 };
   
+//Función para capturar y mostrar los dígitos ingresados
 function inputDigit(digit) {
     const { displayValue, waitingForSecondOperand } = calculator;
   
@@ -16,13 +18,15 @@ function inputDigit(digit) {
       calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
 }
   
+//Función para poner el punto decimal
 function inputDecimal(dot) {
-    // If the `displayValue` does not contain a decimal point
+    //Si `displayValue` no contiene puntos decimales...
     if (!calculator.displayValue.includes(dot)) 
-      // Append the decimal point
+      //...le agrega dicho punto decimal
       calculator.displayValue += dot;
 }
   
+//Función para manejar la secuencia de operaciones
 function handleOperator(nextOperator) {
     const { firstOperand, displayValue, operator } = calculator
     const inputValue = parseFloat(displayValue);
@@ -46,7 +50,8 @@ function handleOperator(nextOperator) {
     calculator.waitingForSecondOperand = true;
     calculator.operator = nextOperator;
 }
-  
+
+//Objeto con las funciones flecha para realizar las operaciones
 const performCalculation = {
     '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
   
@@ -59,6 +64,7 @@ const performCalculation = {
     '=': (firstOperand, secondOperand) => secondOperand
 };
   
+//Función para reestablecer los valores de la calculadora
 function resetCalculator() {
     calculator.displayValue = '0';
     calculator.firstOperand = null;
@@ -66,6 +72,7 @@ function resetCalculator() {
     calculator.operator = null;
 }
   
+//Función para mostrar los resultados de las operaciones
 function updateDisplay() {
     const display = document.querySelector('.calculator-screen');
     display.value = calculator.displayValue;
@@ -73,6 +80,7 @@ function updateDisplay() {
   
 updateDisplay();
   
+//EventListener para el uso y manejo de las funciones programadas
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
   const { target } = event;
