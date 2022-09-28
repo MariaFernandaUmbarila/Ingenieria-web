@@ -45,23 +45,20 @@
           <button type="button" class="equal-sign operator btn btn-light" value="=">=</button>
     
         </div>
-        
-        <div class="calculator card">
+        <div>
+          <h3 id="demo"></h3>
+          <script src="dates.js"></script>
           <script>
-            let hora = hora();
-            let fecha = fecha();
+            let f = fecha();
+            let h = hora();
+            let out = f + "    |    " + h;
+            document.getElementById("demo").innerHTML = out;
           </script>
-        </div>
+        </div>       
+        
     </div>  
-    <!-- jQuery -->
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="mdb.min.js"></script>
-    <!-- Your custom scripts -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>  
 </body>
 </html>
